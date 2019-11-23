@@ -13,7 +13,9 @@ app.use(cors());
 // ----------------- DB Connection ----------------------
 connectDB();
 
+app.use(express.json());
 
+app.use('/admin', require('./routes/api/admin'));
 
 
 
