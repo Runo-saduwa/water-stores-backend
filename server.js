@@ -16,7 +16,9 @@ connectDB();
 app.use(express.json());
 
 app.use('/admin', require('./routes/api/admin'));
-
+//app.use('/cart', require('./routes/api/cartItems'));
+app.use('/user', require('./routes/api/users'));
+app.use('/products', require('./routes/api/products'));
 
 
 
